@@ -1,0 +1,11 @@
+1.电脑环境搭建好：安装jdk，设置JAVA_HOME,安装maven，设置MAVEN_HOME
+2.安装zookeeper（在源码的soft目录有安装文件），解压，在zookeeper-3.4.5路径下新建data文件夹，进入zookeeper-3.4.5/conf路径，
+拷贝文件zoo_sample.cfg，然后改名为zoo.cfg，修改里面的dataDir=E:/evn/zookeeper-3.4.5/data
+3.zookeeper-3.4.5/bin双击zkServer.cmd启动zookeeper（linux环境 ./zkServer.sh来启动zookeeper）
+4.把dubbo-admin-2.5.4.war丢到tomcat的webapps目录，启动tomcat
+5.访问http://localhost:8080/dubbo-admin-2.5.4/governance/services,用户密码root/root
+没有发现有注册的服务
+6.运行Main.java(在server-provider的test源码中)
+7.访问http://localhost:8080/dubbo-admin-2.5.4/governance/services,用户密码root/root
+发现服务已经注册成功
+8.允许Client的testSayHello单元测试方法，调用dubbo提供的服务

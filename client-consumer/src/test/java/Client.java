@@ -9,7 +9,7 @@ import java.util.Date;
  */
 public class Client {
     @Test
-    public void SayHello(){
+    public void testSayHello(){
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] { "applicationConsumer.xml" });
         context.start();
         DemoServer demoServer = (DemoServer) context.getBean("demoService");
