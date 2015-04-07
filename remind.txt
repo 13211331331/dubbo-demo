@@ -8,7 +8,7 @@
 6.运行Main.java(在server-provider的test源码中)
 7.访问http://localhost:8080/dubbo-admin-2.5.4/governance/services,用户密码root/root
 发现服务已经注册成功
-8.允许Client的testSayHello单元测试方法，调用dubbo提供的服务
+8.运行Client(在client-consumer的test源码中)的testSayHello单元测试方法，调用dubbo提供的服务
 
 
 
