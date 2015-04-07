@@ -9,3 +9,7 @@
 7.访问http://localhost:8080/dubbo-admin-2.5.4/governance/services,用户密码root/root
 发现服务已经注册成功
 8.允许Client的testSayHello单元测试方法，调用dubbo提供的服务
+
+
+参照：
+http://blog.csdn.net/morning99/article/details/40426781
